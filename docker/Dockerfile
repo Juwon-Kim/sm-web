@@ -16,16 +16,13 @@ RUN mkdir ./build
 
 
 # git & vi  명령어 설치 & git clone
-RUN apt-get update && apt-get install -y git \
-	&& apt-get install -y vim \
-	&& git clone https://github.com/Juwon-Kim/sm-web.git /opt/app \
-	&& rm /etc/nginx/conf.d/default.conf \
-	&& rm /etc/nginx/nginx.conf
+RUN rm /etc/nginx/conf.d/default.conf \
+ && rm /etc/nginx/nginx.conf
 
 # git과 npm은 jenkins가 설치된 Host에서 진행할 예정이라 아래 코드는 임시
-RUN apt-get install -y npm \
-	&& npm install \
-	&& npm run build
+#RUN apt-get install -y npm \
+#	&& npm install \
+#	&& npm run build
 	
 
 
