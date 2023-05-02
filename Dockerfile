@@ -1,10 +1,4 @@
-
-Raw
- 
-Blame
- 
- 
-#nginx 이미지를 사용합니다. 뒤에 tag가 없으면 latest 를 사용합니다.
+ #nginx 이미지를 사용합니다. 뒤에 tag가 없으면 latest 를 사용합니다.
 FROM nginx
 
 # root 에 app 폴더를 생성
