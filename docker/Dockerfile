@@ -27,8 +27,8 @@ RUN rm /etc/nginx/conf.d/default.conf \
 
 
 # host pc 의 nginx.conf 를 아래 경로에 복사
-COPY docker/nginx.conf /etc/nginx/nginx.conf
-COPY docker/default.conf /etc/nginx/conf.d/default.conf
+COPY ./docker/nginx.conf /etc/nginx/nginx.conf
+COPY ./docker/default.conf /etc/nginx/conf.d/default.conf
 COPY ./dist /opt/app/dist
 
 # 80 포트 오픈
